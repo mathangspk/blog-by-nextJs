@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme = {theme}>
-        <Header isDark/>
+        <Header/>
         <GlobalStyles/>
         <Component {...pageProps} />
       </ThemeProvider>

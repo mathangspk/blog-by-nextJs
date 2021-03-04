@@ -4,7 +4,7 @@ import {rem} from 'polished'
 function Header({isDark}) {
     return (
         <HeaderStyled isDark = {isDark}>
-            <div>
+            <div className="container">
                 <div className="logo">
                     <img src="images/logo.svg" alt="sites logo"></img>
                     <span className="logo-text">Next Movies</span>
