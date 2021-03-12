@@ -14,7 +14,7 @@ const Home = ({ movies }) => {
 export async function getStaticProps() {
   const { API_URL } = process.env
 
-  const res = await fetch(`${API_URL}/movies`)
+  const res = await fetch(`${API_URL}/videos`)
   const data = await res.json()
   return {
     props: {
