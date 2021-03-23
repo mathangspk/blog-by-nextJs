@@ -5,7 +5,7 @@ import { Flex, Box } from 'reflexbox'
 const Home = ({ movies }) => {
   console.log(movies)
   return (
-    <Box variant="container">
+    <Box variant="container" bg={["red","green","blue","black"]}>
       <h2>Last Movies</h2>
       {movies.map(movie =>
         (<Card key={movie.id} movie={movie} />))}
