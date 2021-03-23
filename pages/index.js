@@ -1,13 +1,15 @@
 import fetch from 'isomorphic-unfetch'
 import Card from 'components/Card'
-import {Flex, Box} from 'reflexbox'
+import { Flex, Box } from 'reflexbox'
 
 const Home = ({ movies }) => {
   console.log(movies)
   return (
-    <div className="container">
-      {movies.map(movie => (<Card key={movie.id} movie={movie} />))}
-    </div>
+    <Box variant="container">
+      <h2>Last Movies</h2>
+      {movies.map(movie =>
+        (<Card key={movie.id} movie={movie} />))}
+    </Box>
   )
 }
 
